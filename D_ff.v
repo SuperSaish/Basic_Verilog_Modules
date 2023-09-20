@@ -1,6 +1,6 @@
 module D_ff(D,clk,rst,Q,Qbar);
   input clk,rst,D;
-  output Q,Qbar;
+  output reg Q,Qbar;
   always@(posedge clk or posedge rst) begin
     if(rst) begin
       Q<=1'b0;
